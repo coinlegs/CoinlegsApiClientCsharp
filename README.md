@@ -55,7 +55,6 @@ You should be premium user of Coinlegs or hold minimum 30.000 LEGS tokens in you
 <br />
 22 : RSI Divergence
 <br />
-<br />
 24 : Double Bottom
 <br />
 25 : Double Top
