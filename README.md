@@ -6,6 +6,8 @@ You should put this end point (http://YourIpAddress:5000/api/notification/listen
 After that settings, you will start to receive the alerts and custom signals which you created on the web site/mobile app via this end point. 
 You should be premium user of Coinlegs or hold minimum 30.000 LEGS tokens in your wallet to use Coinlegs API
 <br/>
+<i>You need to set the modem and firewall settings to allow the port you specified</i>
+<br/>
 .NET 5.0
 
 <br /><br />
