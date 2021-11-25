@@ -7,6 +7,7 @@ namespace CoinlegsApiClientCsharp
 {
     public partial class FrmMain : Form
     {
+        private string publicIp = "127.0.0.1";
         public FrmMain()
         {
             InitializeComponent();
@@ -19,6 +20,16 @@ namespace CoinlegsApiClientCsharp
             lbNotify.DataSource = Program.NotifyList;
             lbNotify.DisplayMember = "Display";
             lbNotify.ValueMember = "Display";
+
+
+            GetIpAdress();
+        }
+
+        private void GetIpAdress()
+        {
+            publicIp =  new System.Net.WebClient().DownloadString("https://api.ipify.org");
+
+            lblAdress.Text = $"Your Public Ip Adress : {publicIp}";
         }
 
         private void lbNotify_DrawItem(object sender, DrawItemEventArgs e)
@@ -37,6 +48,11 @@ namespace CoinlegsApiClientCsharp
                 g.DrawString(notification.Display, e.Font, new SolidBrush(Color.White),
                              new PointF(e.Bounds.X, e.Bounds.Y));
             }
+        }
+
+        private void lblAdress_Click(object sender, System.EventArgs e)
+        {
+            Clipboard.SetText($"http://{publicIp}/api/notification/listen");
         }
     }
 }
