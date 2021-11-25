@@ -10,7 +10,7 @@ You should be premium user of Coinlegs or hold minimum 30.000 LEGS tokens in you
 <br/>
 .NET 5.0
 
-<br /><br />
+<br />
 <b>Types</b>
 <br />
 1 : EMA5 x EMA20
