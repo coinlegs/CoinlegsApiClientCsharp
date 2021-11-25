@@ -28,8 +28,7 @@ namespace CoinlegsApiClientCsharp
         private void GetIpAdress()
         {
             publicIp =  new System.Net.WebClient().DownloadString("https://api.ipify.org");
-
-            lblAdress.Text = $"Your Public Ip Adress : {publicIp}";
+            lblAdress.Text = $"Listening : http://{publicIp}:5000/api/notification/listen";
         }
 
         private void lbNotify_DrawItem(object sender, DrawItemEventArgs e)
@@ -52,7 +51,7 @@ namespace CoinlegsApiClientCsharp
 
         private void lblAdress_Click(object sender, System.EventArgs e)
         {
-            Clipboard.SetText($"http://{publicIp}/api/notification/listen");
+            Clipboard.SetText($"http://{publicIp}:5000/api/notification/listen");
         }
     }
 }

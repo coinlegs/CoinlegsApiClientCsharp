@@ -71,7 +71,7 @@ namespace CoinlegsApiClientCsharp
             this.lblAdress.Name = "lblAdress";
             this.lblAdress.Size = new System.Drawing.Size(127, 15);
             this.lblAdress.TabIndex = 3;
-            this.lblAdress.Text = "Your Public Ip Adress : ";
+            this.lblAdress.Text = "";
             this.toolTip.SetToolTip(this.lblAdress, "Click Here To Copy");
             this.lblAdress.Click += new System.EventHandler(this.lblAdress_Click);
             // 
@@ -97,7 +97,7 @@ namespace CoinlegsApiClientCsharp
             this.Name = "FrmMain";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Coinlegs Api Client";
+            this.Text = "Coinlegs API C# Client";
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

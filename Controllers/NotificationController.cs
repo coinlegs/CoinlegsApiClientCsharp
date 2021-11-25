@@ -10,7 +10,7 @@ namespace CoinlegsApiClientCsharp.Controllers
     [ApiController]
     public class NotificationController : ControllerBase
     {
-        [HttpPost]
+        [HttpPost("Listen")]
         public IActionResult Notify([FromBody] string content)
         {
             Notification notification = JsonConvert.DeserializeObject<Notification>(content);
