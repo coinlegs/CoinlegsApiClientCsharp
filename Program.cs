@@ -5,16 +5,13 @@ using CoinlegsApiClientCsharp.Model;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace CoinlegsApiClientCsharp
-{
-    static class Program
-    {
+namespace CoinlegsApiClientCsharp {
+    static class Program {
         public static FrmMain MainForm { get; private set; }
         public static BindingList<Notification> NotifyList = new();
 
         [STAThread]
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
             CreateWebHostBuilder(args).Build().RunAsync();
 
             NotifyList.ListChanged += NotifyList_ListChanged;
@@ -26,12 +23,14 @@ namespace CoinlegsApiClientCsharp
             Application.Run(MainForm);
         }
 
-        private static void NotifyList_ListChanged(object sender, ListChangedEventArgs e)
-        {
+        private static void NotifyList_ListChanged(object sender, ListChangedEventArgs e) {
             MainForm.lblNotificationCount.Text = $"Incoming Notification : {NotifyList.Count}";
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            /*
+             * You don't need to change this line, but you need to give permission for this port on Firewall or any antivirus programs which you use
+             */
             WebHost.CreateDefaultBuilder(args).UseKestrel().UseUrls("http://0.0.0.0:5000").UseStartup<Startup>();
     }
 }

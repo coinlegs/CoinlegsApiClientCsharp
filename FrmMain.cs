@@ -21,7 +21,6 @@ namespace CoinlegsApiClientCsharp
             lbNotify.DisplayMember = "Display";
             lbNotify.ValueMember = "Display";
 
-
             GetIpAdress();
         }
 
