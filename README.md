@@ -11,7 +11,13 @@ You should be premium user of Coinlegs or hold minimum 30.000 LEGS tokens in you
 .NET 5.0
 <br/>
 <a href='https://medium.com/@coinlegs/coinlegs-api-216cbd1978a4' target='_blank'>Medium Article</a>
+<br/>
+<br/>
+Visit this page to reach advance autotrading bot developed by one of Coinlegs lovers (it's not Coinlegs official account)
+<br/>
+https://github.com/Lu05
 
+<br />
 <br />
 <b>Types</b>
 <br />
